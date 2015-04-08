@@ -1,0 +1,32 @@
+package no.pkg2;
+
+import java.io.*;  
+  
+public class No2{  
+    public static void main (String args []) throws Exception{  
+        InputStreamReader key = new InputStreamReader (System.in);  
+        BufferedReader input = new BufferedReader (key);  
+      
+        String n;  
+        int i,j,k=1;  
+       
+        System.out.print ("===================================");  
+        System.out.print("\n");   
+        System.out.println ("Menghitung Bilangan Faktorial ");  
+        System.out.print ("===================================");  
+        System.out.println(" ");  
+        System.out.print("\n");  
+        System.out.print("Masukkan Nilai Faktorial = ");  
+         
+        n=input.readLine(); 
+        j=Integer.parseInt(n);
+        System.out.print(j+"!= ");  
+        for (i=j; i>=1; i--){  
+       
+            System.out.print(i);  
+            if (i>1)  
+             System.out.print("x");  
+             k=k*i;} 
+        System.out.println (j+"!= "+k);   
+       
+        }  
